@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!-- External CSS link -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Offcanvas Sidebar (Right Side) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+      <!-- Offcanvas Header with Close Button -->
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Offcanvas Body -->
+      <div class="offcanvas-body text-center">
+        <img
+          src="./WhatsApp Image 2025-06-28 at 18.11.29_33b3ef33.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <div class="profile-name">Malavika Venugopal</div>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/malavikavenugopal"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <ul class="navbar-nav text-start">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html">Resume</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="./services.html">Services</a>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="about-section container mt-5">
+      <div class="row align-items-center">
+        <!-- Left: Profile Image -->
+        <div class="col-lg-4 text-center">
+          <img
+            src="./WhatsApp Image 2025-06-28 at 18.11.29_33b3ef33.jpg"
+            alt="Malavika Venugopal"
+            class="about-img"
+          />
+          <h4 class="signature">Malavika Venugopal</h4>
+        </div>
+
+        <!-- Right: About Content -->
+        <div class="col-lg-8">
+          <h2 class="about-title mt-5">About</h2>
+          <p class="about-subtitle">
+            Passionate and driven individual with a background in Electronics &
+            Communication Engineering, currently pursuing an MBA in Analytics.
+            With experience as a Junior Software Developer, I combine technical
+            expertise with strategic insight to create impactful solutions.
+          </p>
+
+          <h3 class="intro-heading">
+            Hi, I'm Malavika - a Full Stack Developer
+          </h3>
+          <p class="intro-text">
+            I specialize in building responsive, user-friendly applications and
+            transforming complex ideas into elegant digital solutions. With
+            strong problem-solving skills and a creative mindset, I thrive in
+            both development and analytics.
+          </p>
+
+          <!-- Skills Boxes -->
+          <div class="row skill-boxes">
+            <div class="col-md-4">
+              <div class="skill-card">
+                <i class="fas fa-laptop-code"></i>
+                <h5>Full Stack Dev</h5>
+                <p>
+                  Expertise in frontend & backend development with modern
+                  technologies.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h5>Analytics</h5>
+                <p>
+                  Strong foundation in business analytics and data-driven
+                  decision making.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-card">
+                <i class="fas fa-lightbulb"></i>
+                <h5>Creative Solutions</h5>
+                <p>
+                  Innovative ideas for improving systems, products, and
+                  processes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2019 - 2023</span>
+              <span class="detail"
+                >B.Tech in ECE, Nehru College of Engineering and Research
+                Centre</span
+              >
+            </div>
+            <div class="timeline-item">
+              <span class="year">2024 - 2025</span>
+              <span class="detail"
+                >Junior Software Developer, Weberfox Technologies Pvt Ltd</span
+              >
+            </div>
+            <div class="timeline-item">
+              <span class="year">2025 - 2027</span>
+              <span class="detail">MBA in Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+      <div class="container text-center">
+        <div class="footer-social mb-3">
+          <a
+            href="https://www.linkedin.com/in/malavikavenugopal"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="mb-0">&copy; 2025 Malavika Venugopal. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
