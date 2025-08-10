@@ -18,7 +18,7 @@ body {
   
     /* Navbar color */
     .navbar {
-        background-color: #13447f !important;
+        background-color: #7C3848 !important;
 
       }
   
@@ -43,7 +43,7 @@ body {
 
 /* Offcanvas Sidebar (Right Side) */
 .offcanvas {
-  background-color: #13447f;
+  background-color: #7C3848;
   color: white;
   width: 260px;
 }
@@ -82,7 +82,7 @@ body {
   text-decoration: none;
 }
 .social-icons a:hover {
-  background-color: #0e355f;
+  background-color: #4d252e;
 }
 .offcanvas .nav-link {
   color: #fff;
@@ -91,7 +91,7 @@ body {
   padding: 10px 15px;
 }
 .offcanvas .nav-link:hover {
-  background-color: #0e355f;
+  background-color: #4d252e;
   border-radius: 5px;
 }
 
@@ -107,7 +107,7 @@ body {
 .hero-text h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #13447f;
+  color: #7C3848;
 }
 .hero-text p {
   color: #555;
@@ -126,7 +126,7 @@ body {
 .stat h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #13447f;
+  color: #7C3848;
 }
 .stat span {
   display: block;
@@ -137,15 +137,15 @@ body {
   margin-bottom: 20px;
 }
 .hero-buttons .btn-primary {
-  background-color: #13447f;
+  background-color: #7C3848;
   border: none;
 }
 .hero-buttons .btn-outline-dark {
-  border-color: #13447f;
-  color: #13447f;
+  border-color: #7C3848;
+  color: #7C3848;
 }
 .hero-buttons .btn-outline-dark:hover {
-  background-color: #13447f;
+  background-color: #7C3848;
   color: white;
 }
 .hero-social {
@@ -154,7 +154,7 @@ body {
 }
 .hero-social a {
   font-size: 1.3rem;
-  color: #13447f;
+  color: #7C3848;
 }
 
 .skill-card {
@@ -172,7 +172,7 @@ body {
   }
   .skill-header i {
     font-size: 24px;
-    color: #13447f;
+    color: #7C3848;
   }
   
   .progress-item {
@@ -190,7 +190,7 @@ body {
     height: 14px;
   }
   .progress-bar {
-    background: #13447f;
+    background: #7C3848;
     height: 100%;
     font-size: 10px;
     color: white;
@@ -208,7 +208,7 @@ body {
   .expertise-card h5 {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #13447f;
+    color: #7C3848;
   }
   .expertise-card p {
     font-size: 14px;
@@ -223,12 +223,12 @@ body {
     font-size: 14px;
   }
   .expertise-stat i {
-    color: #13447f;
+    color: #7C3848;
   }
   
   .certifications span {
     display: inline-block;
-    background: #13447f;
+    background: #7C3848;
     color: white;
     font-size: 12px;
     padding: 5px 10px;
@@ -254,7 +254,7 @@ body {
     position: absolute;
     width: 360px; /* slightly bigger than image */
     height: 100%;
-    background-color: #13447f; /* Blue color */
+    background-color: #7C3848; /* Blue color */
     border-radius: 20px;
     top:16px;
     right: -16px; /* move slightly to right */
@@ -320,8 +320,8 @@ body {
   
 
 .typing {
-color: #13447f; /* Blue color for "Creative" */
-border-right: 3px solid #13447f;
+color: #7C3848; /* Blue color for "Creative" */
+border-right: 3px solid #7C3848;
 white-space: nowrap;
 overflow: hidden;
 display: inline-block;
@@ -343,7 +343,7 @@ text-decoration: none;
   }
   
   .footer {
-    background-color: #13447f !important;
+    background-color: #7C3848 !important;
     color: #fff;
     padding: 30px 0;
     width: 100%; /* makes it full width by default */
@@ -383,10 +383,10 @@ text-decoration: none;
   .about-title {
     font-size: 2rem;
     font-weight: 600;
-    border-bottom: 2px solid #13447f;
+    border-bottom: 2px solid #7C3848;
     display: inline-block;
     padding-bottom: 5px;
-    color: #13447f;
+    color: #7C3848;
   }
   
   .about-subtitle {
@@ -398,7 +398,7 @@ text-decoration: none;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 4px solid #13447f;
+    border: 4px solid #7C3848;
     object-fit: cover;
 
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -407,13 +407,13 @@ text-decoration: none;
   .signature {
     font-size: 1.5rem;
     margin-top: 15px;
-    color: #13447f;
+    color: #7C3848;
   }
   
   .intro-heading {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #13447f;
+    color: #7C3848;
     margin-top: 20px;
   }
   
@@ -425,17 +425,18 @@ text-decoration: none;
   }
   
   .skill-card {
-    background-color: #f1f7fd; /* light blue bg */
+    background-color: #e8c3cb; /* light blue bg */
     border-radius: 12px;
     padding: 25px 20px;
     text-align: center;
+    margin: 2px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     border: 1px solid transparent;
   }
   
   .skill-card i {
-    background-color: #13447f; /* solid blue */
+    background-color: #7C3848; /* solid blue */
     color: white;
     font-size: 1.5rem;
     padding: 15px;
@@ -447,7 +448,7 @@ text-decoration: none;
   .skill-card h5 {
     font-weight: 600;
     margin-bottom: 10px;
-    color: #13447f;
+    color: #7C3848;
   }
   
   .skill-card p {
@@ -471,7 +472,7 @@ text-decoration: none;
   .timeline-item {
     position: relative;
     padding-left: 30px;
-    border-left: 2px solid #13447f;
+    border-left: 2px solid #7C3848;
   }
   
   .timeline-item::before {
@@ -486,7 +487,7 @@ text-decoration: none;
   }
   
   .timeline-item .year {
-    color: #13447f;
+    color: #7C3848;
     font-weight: 700;
     display: block;
     margin-bottom: 5px;
@@ -504,7 +505,7 @@ text-decoration: none;
   .btn-download {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #13447f;
+    background-color: #7C3848;
     color: white;
     font-weight: 600;
     border-radius: 25px;
@@ -513,7 +514,7 @@ text-decoration: none;
   }
   
   .btn-download:hover {
-    background-color: #13447f;
+    background-color: #7C3848;
   }
   
 
@@ -544,7 +545,7 @@ margin-top: 80px
   
   h3 i {
     margin-right: 8px;
-    color: #13447f;
+    color: #7C3848;
   }
   
   ul {
@@ -556,11 +557,11 @@ margin-top: 80px
   }
 
   .textprimary{
-    color: #13447f;
+    color: #7C3848;
   }
 
   .bgprimary{
-    background-color: #13447f;
+    background-color: #7C3848;
   }
 
 /* 
@@ -579,7 +580,7 @@ margin-top: 80px
   }
   
   .contact-card h3 {
-    color: #13447f;
+    color: #7C3848;
     font-size: 1.8rem;
   }
   
@@ -604,7 +605,7 @@ margin-top: 80px
   }
   
   .contact-icon {
-    background: #13447f;
+    background: #7C3848;
     color: white;
     font-size: 1.5rem;
     border-radius: 50%;
@@ -619,7 +620,7 @@ margin-top: 80px
   .contact-title {
     font-weight: 600;
     font-size: 1rem;
-    color: #13447f;
+    color: #7C3848;
   }
   
   .contact-text {
@@ -642,7 +643,7 @@ margin-top: 80px
 
   
 .textprimary{
-    color: #13447f;
+    color: #7C3848;
   }
 
 /* 
@@ -661,7 +662,7 @@ margin-top: 80px
 
 .blog-header h1 {
     font-size: 2.2rem;
-    color: #13447f;
+    color: #7C3848;
 }
 
 .blog-cards {
@@ -688,7 +689,7 @@ margin-top: 80px
     padding: 20px;
 }
 .card-content h3 {
-    color: #13447f;
+    color: #7C3848;
     margin-bottom: 10px;
 }
 .card-content p {
@@ -698,7 +699,7 @@ margin-top: 80px
 .card-content a {
     display: inline-block;
     margin-top: 10px;
-    color: #13447f;
+    color: #7C3848;
     text-decoration: none;
     font-weight: bold;
 }
@@ -711,7 +712,7 @@ margin-top: 80px
     overflow: hidden;
 }
 .card-gradient-header {
-    background: linear-gradient(135deg, #13447f, #1f5bb8);
+    background: linear-gradient(135deg, #7C3848, #bd7282);
     color: #fff;
     padding: 20px;
 }
@@ -726,13 +727,13 @@ margin-top: 80px
 /* Card 3 - Border Accent */
 .card-border {
     background: #fff;
-    border-left: 6px solid #13447f;
+    border-left: 6px solid #7C3848;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 .card-border h3 {
-    color: #13447f;
+    color: #7C3848;
     margin-bottom: 10px;
 }
 .card-border p {
@@ -756,12 +757,12 @@ margin-top: 80px
   }
   
   .blog-details h1 {
-    color: #13447f;
+    color: #7C3848;
     margin-bottom: 0.5rem;
   }
   
   .blog-details h2 {
-    color: #0a2d5f;
+    color: #4d252e;
     margin-top: 1.5rem;
     margin-bottom: 0.8rem;
   }
