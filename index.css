@@ -5,6 +5,17 @@ body {
 
 }
 
+
+  .hero-text h1 {
+    min-height: 50px; /* fix height so no jump */
+    margin-bottom: 10px;
+  }
+
+  .hero-text h1 {
+    height: 1.2em; /* lock height to one line */
+    line-height: 1.2em;
+  }
+  
     /* Navbar color */
     .navbar {
         background-color: #13447f !important;
@@ -13,7 +24,7 @@ body {
   
       /* Brand styling */
       .navbar-brand {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
         font-weight: bold;
         color: white;
       }
@@ -146,71 +157,167 @@ body {
   color: #13447f;
 }
 
+.skill-card {
+    background: #f9fbff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .skill-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .skill-header i {
+    font-size: 24px;
+    color: #13447f;
+  }
+  
+  .progress-item {
+    margin-bottom: 10px;
+  }
+  .progress-item span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .progress {
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 14px;
+  }
+  .progress-bar {
+    background: #13447f;
+    height: 100%;
+    font-size: 10px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    border-radius: 10px;
+  }
+  
+  .expertise-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .expertise-card h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #13447f;
+  }
+  .expertise-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .expertise-stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .expertise-stat i {
+    color: #13447f;
+  }
+  
+  .certifications span {
+    display: inline-block;
+    background: #13447f;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 3px;
+  }
+  
+ 
+ 
+  
 
-/* Profile Image Wrapper */
+/* Wrapper for image + blue background */
 .profile-image-wrapper {
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-}
-
-/* Container */
-.image-container {
-position: relative;
-display: inline-block;
-}
-
-/* Main profile image */
-.profile-main {
-width: 360px;
-height: auto;
-border-radius: 20px;
-display: block;
-box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* Floating Labels */
-.floating-label {
-position: absolute;
-background: white;
-padding: 8px 16px;
-border-radius: 50px;
-box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-font-size: 14px;
-font-weight: 500;
-display: flex;
-align-items: center;
-gap: 6px;
-animation: floatUpDown 3.5s ease-in-out infinite;
-white-space: nowrap;
-}
-
-/* Label positions inside image */
-.label-top {
-top: 20px;
-left: 20px;
-}
-
-.label-middle {
-top: 50%;
-right: 20px; /* now on right side */
-transform: translateY(-50%);
-animation-delay: 1s;
-}
-
-.label-bottom {
-bottom: 20px;
-left: 20px;
-animation-delay: 0.5s;
-}
-
-/* Floating animation */
-@keyframes floatUpDown {
-0%, 100% { transform: translateY(0); }
-50% { transform: translateY(-12px); }
-}
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Blue background shape */
+  .profile-image-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 360px; /* slightly bigger than image */
+    height: 100%;
+    background-color: #13447f; /* Blue color */
+    border-radius: 20px;
+    top:16px;
+    right: -16px; /* move slightly to right */
+    z-index: 0; /* behind the image */
+  }
+  
+  /* Container */
+  .image-container {
+    position: relative;
+    display: inline-block;
+    z-index: 1; /* keeps image above background */
+  }
+  
+  /* Main profile image */
+  .profile-main {
+    width: 360px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  
+  /* Floating Labels */
+  .floating-label {
+    position: absolute;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    animation: floatUpDown 3.5s ease-in-out infinite;
+    white-space: nowrap;
+  }
+  
+  /* Label positions inside image */
+  .label-top {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .label-middle {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    animation-delay: 1s;
+  }
+  
+  .label-bottom {
+    bottom: 20px;
+    left: 20px;
+    animation-delay: 0.5s;
+  }
+  
+  /* Floating animation */
+  @keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  
 
 .typing {
 color: #13447f; /* Blue color for "Creative" */
@@ -313,50 +420,100 @@ text-decoration: none;
   .intro-text {
     font-size: 1rem;
     color: #555;
-  }
-  
-  .skill-boxes {
+  }.skill-boxes {
     margin-top: 20px;
   }
   
   .skill-card {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    padding: 20px;
+    background-color: #f1f7fd; /* light blue bg */
+    border-radius: 12px;
+    padding: 25px 20px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    border: 1px solid transparent;
   }
   
   .skill-card i {
-    font-size: 2rem;
-    color: #13447f;
+    background-color: #13447f; /* solid blue */
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  .skill-card h5 {
+    font-weight: 600;
     margin-bottom: 10px;
+    color: #13447f;
+  }
+  
+  .skill-card p {
+    color: #6c757d;
+    font-size: 0.95rem;
   }
   
   .skill-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
   }
+  
   
   .timeline {
     margin-top: 30px;
-    border-left: 2px solid #13447f;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
   
   .timeline-item {
-    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #13447f;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+ 
+    border-radius: 50%;
   }
   
   .timeline-item .year {
     color: #13447f;
-    font-weight: 600;
-    display: inline-block;
-    width: 120px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
   }
   
   .timeline-item .detail {
     color: #555;
+  }
+  
+  /* Download Button */
+  .resume-btn {
+    margin-top: 25px;
+  }
+  
+  .btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #13447f;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-download:hover {
+    background-color: #13447f;
   }
   
 
@@ -408,36 +565,80 @@ margin-top: 80px
 
 /* 
   CONTACT CARD */
-  .contact-card {
-    background-color: #13447f;
-    color: white;
-    padding: 30px;
+ 
+  /* Contact Page Styling */
+.contact-card {
+    background: #ffffff;
+    padding: 2.5rem;
     border-radius: 15px;
-    max-width: 400px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
   }
+  
+  .contact-card h3 {
+    color: #13447f;
+    font-size: 1.8rem;
+  }
+  
+  .contact-card p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background: #f9f9f9;
+    padding: 0.8rem;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+  }
+  
   .contact-icon {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: #13447f;
+    color: white;
+    font-size: 1.5rem;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    margin-right: 15px;
+    margin-right: 1rem;
   }
-  .contact-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
+  
   .contact-title {
-    font-weight: bold;
-    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #13447f;
   }
+  
   .contact-text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    color: #555;
   }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 
   
 .textprimary{
